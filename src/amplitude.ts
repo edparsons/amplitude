@@ -255,4 +255,21 @@ export default class Amplitude {
         .then(res => res.data)
     )
   }
+
+  eventList(): Promise<AmplitudeResponseBody> {
+    if (!this.secretKey) {
+      throw new Error('secretKey must be set to use the eventList method')
+    }
+
+    return axiosErrorCatcher(
+      axios
+        .get(`${AMPLITUDE_DASHBOARD_ENDPOINT}/events/list`, {
+          auth: {
+            username: this.token,
+            password: this.secretKey
+          }
+        })
+        .then(res => res.data)
+    )
+  }
 }

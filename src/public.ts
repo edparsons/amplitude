@@ -232,9 +232,10 @@ export interface AmplitudeExportOptions {
 }
 
 export interface AmplitudeSegmentationOptions {
-  start?: Date
-  end?: Date
-  e?: unknown
+  start: Date
+  end: Date
+  e: unknown
+  g?: unknown
 }
 
 export interface AmplitudeUserActivityOptions {

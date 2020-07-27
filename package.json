@@ -14,6 +14,11 @@
   },
   "contributors": [
     {
+      "name": "Ed Parsons",
+      "email": "ed@acutulus.co",
+      "url": "http://acutulus.co/"
+    },
+    {
       "name": "Erki Esken",
       "email": "erki@deekit.net",
       "url": "http://deekit.net/"
@@ -67,7 +72,7 @@
     "@types/chai": "^4.2.11",
     "@types/eslint": "^7.2.0",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^14.0.14",
+    "@types/node": "^14.0.26",
     "@types/sinon": "^9.0.4",
     "@types/sinon-chai": "^3.2.4",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
